@@ -1,0 +1,13 @@
+{
+  "name": "pizza-delivery-app-workspace",
+  "version": "1.0.0",
+  "description": "Workspace root configuration to run the app",
+  "scripts": {
+    "start-server": "npm start --prefix OIBSIP_Pizza-delivery-app/server",
+    "start-client": "npm start --prefix OIBSIP_Pizza-delivery-app/client",
+    "start": "npx concurrently \"npm run start-server\" \"npm run start-client\""
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
